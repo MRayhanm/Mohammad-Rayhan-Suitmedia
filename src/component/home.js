@@ -1,20 +1,9 @@
-import { Container,Stack, VStack, Text, HStack, Box, FormControl,
-    FormLabel,
-    FormErrorMessage,
-    FormHelperText, Input, Center, Button} from "@chakra-ui/react";
+import { Container, VStack, Text, HStack, Box, FormControl,
+    FormLabel, Input, Center, Button} from "@chakra-ui/react";
 import { BsLightbulb, BsBank2 } from "react-icons/bs";
 import { FaBalanceScale } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import { useFormik } from "formik";
 const Home = () => {
-    const formik = useFormik({
-        initialValues: {
-          email: '',
-        },
-        onSubmit: (values) => {
-          alert(JSON.stringify(values, null, 2))
-        },
-      })
     return (
       <div>
         <Container>
